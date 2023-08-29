@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net7.0-ios;net7.0-android</TargetFrameworks>
+
+		<!-- Ensures the .xr.xml files are generated in a proper layout folder -->
+		<GenerateLibraryLayout>true</GenerateLibraryLayout>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Uno.Dsp.Tasks" Version="1.1.0" />
+		<PackageReference Include="Uno.WinUI" Version="4.9.45" />
+		<PackageReference Include="Uno.Resizetizer" Version="1.1.2" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+		<PackageReference Include="Uno.Material.WinUI" Version="2.6.1" />
+		<PackageReference Include="Uno.Toolkit.WinUI.Material" Version="3.0.5" />
+		<PackageReference Include="Uno.Extensions.Toolkit.WinUI" Version="2.4.2" />
+		<PackageReference Include="Uno.Toolkit.WinUI" Version="3.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Assets\**" />
+		<Page Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
+		<Compile Update="**\*.xaml.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<PRIResource Include ="**\*.resw" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<UnoDspImportColors Include="Styles\*.zip"
+												Generator="Xaml" />
+		<UnoImage Include="Assets\**\*.svg" />
+		<UpToDateCheckInput Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
+	</ItemGroup>
+</Project>
