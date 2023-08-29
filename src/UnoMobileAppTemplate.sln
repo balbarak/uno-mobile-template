@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoMobileAppTemplate", "Uno
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoMobileAppTemplate.Mobile", "UnoMobileAppTemplate\UnoMobileAppTemplate.Mobile\UnoMobileAppTemplate.Mobile.csproj", "{8163C80C-AC3C-4867-96AE-4A74F9A35B6D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8280DC01-F773-478A-B0C9-2999BAAA86CC}"
+	ProjectSection(SolutionItems) = preProject
+		UnoMobileAppTemplate\Directory.Build.props = UnoMobileAppTemplate\Directory.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

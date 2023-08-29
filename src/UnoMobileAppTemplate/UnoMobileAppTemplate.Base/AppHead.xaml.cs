@@ -28,7 +28,7 @@ namespace UnoMobileAppTemplate
         {
             base.OnLaunched(args);
 
-            MainWindow.SetWindowIcon();
+            _mainWindow.SetWindowIcon();
         }
 
         /// <summary>

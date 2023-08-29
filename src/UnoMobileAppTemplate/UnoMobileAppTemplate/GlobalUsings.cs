@@ -12,3 +12,4 @@ global using Windows.ApplicationModel;
 global using Windows.Networking.Connectivity;
 global using Windows.Storage;
 global using ApplicationExecutionState = Windows.ApplicationModel.Activation.ApplicationExecutionState;
+global using UnoMobileAppTemplate.Views;
